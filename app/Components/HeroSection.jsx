@@ -5,6 +5,12 @@ import { TypeAnimation } from 'react-type-animation';
 import {motion} from 'framer-motion'
 
 const HeroSection = () => {
+    const handleDownload = () => {
+        // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
+        const resumeUrl = 'public/resume/ResumeNovember.pdf';
+        
+        window.open(resumeUrl, '_blank');
+        };
   return (
     <section className='lg:py-16'>
         <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -32,12 +38,12 @@ const HeroSection = () => {
                         repeat={Infinity}
                     />
                 </h1>
-                <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
+                {/* <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod     tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                </p> */}
                 <div>
-                    <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 hover:bg-slate-200 text-white'>Hire Me</button>
-                    <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 hover:bg-slate-800 text-white mt-3'>
+                    {/* <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 hover:bg-slate-200 text-white'>Hire Me</button> */}
+                    <button onClick={handleDownload} className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 hover:bg-slate-800 text-white mt-3'>
                         <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download Resume</span>
                     </button>
                 </div>

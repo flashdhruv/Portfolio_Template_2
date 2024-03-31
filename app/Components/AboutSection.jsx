@@ -11,10 +11,17 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>MySQL</li>
+        <li>Java</li>
         <li>JavaScript</li>
         <li>React</li>
+        <li>Selenium</li>
+        <li>TypeScript</li>
+        <li>MongoDB</li>
+        <li>HTML/CSS</li>
+        <li>Python</li>
+        <li>C#</li>
+        <li>Lua</li>
       </ul>
     ),
   },
@@ -23,21 +30,21 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        {/* <li>Fullstack Academy of Code</li> */}
+        <li>University of British Columbia, Okanagan</li>
       </ul>
     ),
   },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Certifications",
+  //   id: "certifications",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>AWS Cloud Practitioner</li>
+  //       <li>Google Professional Cloud Developer</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 
 const AboutSection = () => {
@@ -57,12 +64,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          Hey, I'm Dhruv, a recent graduate from the University of British Columbia. Originally from India, I've spent most of my life in Dubai and completed my degree in Kelowna, BC. My journey has been fueled by hands-on experiences, especially through coding internships at Microsoft and SKYTRAC. At Microsoft, I immersed myself in agile product development, collaborating with experts and refining my coding skills. Similarly, at SKYTRAC, I honed my programming prowess, specializing in testing methodologies and mastering frameworks like Selenium. Now, I'm eager to channel my expertise into a software development role, contributing to impactful projects and embracing creativity. When I'm not coding, you'll find me rooting for Manchester United or hitting the gym. With strengths in team collaboration, problem-solving, and adaptability, I'm ready to make my mark in the software development landscape.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -79,13 +81,13 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
               Certifications{" "}
-            </TabButton>
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}

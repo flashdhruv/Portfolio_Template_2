@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const EmailSection = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-64'>
+    <div id='contact' className='flex flex-col items-center justify-center h-64'>
             <div className='text-center mb-4 '>
                 <h5 className='text-xl font-bold text-white my-2'>Let&apos;s Connect</h5>
                 <p className='text-[#ADB7BE] max-w-md'>
@@ -16,12 +16,12 @@ const EmailSection = () => {
             </div>
             <div className='socials flex flex-row gap-2'>
                 <div className='text-center'>
-                    <Link href="github.com">
+                    <Link href="https://github.com/flashdhruv">
                         <Image src={Githubicon} alt='github icon'/>
                     </Link>
                 </div>
                 <div className='text-center'>
-                    <Link href="linkedin.com">
+                    <Link href="https://www.linkedin.com/in/dhruv-bahl/">
                         <Image src={linkedInIcon} alt='linkedin Icon' />
                     </Link>
                 </div>
