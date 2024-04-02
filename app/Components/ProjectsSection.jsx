@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: "Admin Portal Website",
     description: "An Introduction to Typescript. A portal that pulls personal information from an endpoint",
-    image: "/images/projects/about-image.png",
+    image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/flashdhruv/employee-portal?tab=readme-ov-file",
     previewUrl: "https://flashdhruv.github.io/employee-portal",
