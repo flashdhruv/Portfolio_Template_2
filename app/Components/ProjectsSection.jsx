@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/Projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/flashdhruv/Portfolio_Template_2",
-    previewUrl: "/",
+    previewUrl: "https://portfolio-template-2-p4azpbzde-dhruv-bahls-projects.vercel.app",
   },
   {
     id: 2,
